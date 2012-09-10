@@ -1,6 +1,7 @@
 Cameo::Application.routes.draw do
   devise_for :users
 
+  root :to => "home#index"
   get "home/index"
 
   # The priority is based upon order of creation:
