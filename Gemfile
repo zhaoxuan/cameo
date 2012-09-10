@@ -2,8 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'mysql2'
+gem 'sqlite3'
 gem 'therubyracer'
 gem 'devise'
+gem 'twitter-bootstrap-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
