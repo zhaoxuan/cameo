@@ -8,7 +8,49 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="navbar navbar-inverse">
+  <div class="navbar navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Some Store</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><%= link_to "Browse Products"%></li>
+          <li><%= link_to "Price List" %></li>
+          <li><%= link_to "Contact Us" %></li>
+          <li><%= link_to "Cart" %></li>
+          <li>
+            <div class="dropdown">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li><a tabindex="-1" href="#">Action</a></li>
+                <li><a tabindex="-1" href="#">Another action</a></li>
+                <li><a tabindex="-1" href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">Separated link</a></li>
+              </ul>
+            </div>
+            
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class='container' style='width:600px;'>
+  <div class='row'>
+    <div class='span3'><%= yield %></div>
+    <div class='span3'>
+      <h2>About Us</h2>
+      登录的基本页面，采用渐变的颜色，从左向右，但是感觉最右边的颜色有点太浅了，太白了，所以有点太亮了。而且不能拉伸，我喜欢的样式应该是直接到最下面的
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
