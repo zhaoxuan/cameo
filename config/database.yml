@@ -1,13 +1,9 @@
 development:
-  adapter: mysql2
+  adapter: sqlite3
   encoding: utf8
-  database: cameo
+  database: db/development.sqlite3
   pool: 5
-  username: root
-  password: wzc
-  socket: /var/run/mysqld/mysqld.sock
   timeout: 5000
-  host: localhost
 
 test:
   adapter: mysql2
